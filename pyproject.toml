@@ -1,0 +1,19 @@
+[project]
+name = "im-scale-convert"
+version = "0.1.0"
+description = "Scale batches of images with optional conversion to WebP."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pillow>=10.0.0",
+]
+authors = [{ name = "Robert McDermott", email = "robert.c.mcdermott@gmail.com" }]
+keywords = ["images", "resize", "webp", "cli"]
+license = { file = "LICENSE" }
+
+[project.scripts]
+im-scale-convert = "im_scale_convert.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
