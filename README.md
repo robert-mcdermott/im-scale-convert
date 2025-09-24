@@ -7,7 +7,7 @@
 Install from a local checkout or GitHub URL with `pip`/`uv`:
 
 ```bash
-uv pip install git+https://github.com/<your-org>/im-scale-convert.git
+uv pip install git+https://github.com/robert-mcdermott/im-scale-convert.git
 ```
 
 Or run directly via `uvx` without installing globally:
@@ -19,7 +19,7 @@ uvx im-scale-convert --percent 50 --input-dir images --output-dir images-scaled
 To run straight from a Git repository without cloning:
 
 ```bash
-uvx --from git+https://github.com/<your-org>/im-scale-convert.git im-scale-convert --percent 60 \
+uvx --from git+https://github.com/robert-mcdermott/im-scale-convert.git im-scale-convert --percent 60 \
   --input-dir images --output-dir images-scaled
 ```
 
@@ -66,7 +66,7 @@ Supported inputs: `.jpg`, `.jpeg`, `.png`, `.webp`, `.bmp`, `.tif`, `.tiff`.
 
 ### Development
 
-Run the CLI locally from a checkout:
+Run the CLI locally for development and testing:
 
 ```bash
 uv run im_scale_convert/cli.py --percent 50 --input-dir images --output-dir images-scaled
